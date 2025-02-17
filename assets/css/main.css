@@ -2104,7 +2104,7 @@ input, select, textarea {
     border-radius: 50%; /* Hace que sea un círculo */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;	
 }
 
 .custom-twitter .icon-container:hover {
@@ -2113,11 +2113,8 @@ input, select, textarea {
 .custom-twitter svg {
     width: 15px;
     height: 15px;
-    fill: black; /* Color del icono */
+    fill: black; /* Color del icono */	
 }
-
-
-
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
