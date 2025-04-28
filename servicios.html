@@ -19,7 +19,9 @@
 		<!-- Header -->
 		<!-- Note: The "styleN" class below should match that of the banner element. -->
 		<header id="header" class="alt">
-			<a href="index.html" class="logo"><strong>CicloIT</strong></a>
+			<a href="index.html" class="logo">
+				<img src="/images/sinfondo.png" alt="CicloIT" style="height: 60px;">
+			</a>
 			<nav>
 				<a href="#menu">Menu</a>
 			</nav>
@@ -29,7 +31,7 @@
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="generic.htmls">Sobre Nosotros</a></li>
+				<li><a href="nosotros.html">Sobre Nosotros</a></li>
 				<li><a href="#one">Servicios</a></li>
 			</ul>
 		</nav>
@@ -68,8 +70,8 @@
 
 			<!-- Two -->
 			<section id="two" class="spotlights">
-				<section>
-					<a href="generic.html" class="image">
+				<section id="two2">
+					<a href="#" class="image">
 						<img src="images/mantenimiento.webp" alt="" data-position="center center" />
 					</a>
 					<div class="content">
@@ -77,32 +79,40 @@
 							<header class="major">
 								<h3>Mantenimiento</h3>
 							</header>
-							<p>En CicloIT, ofrecemos mantenimiento integral de redes y sistemas de seguridad, asegurando su óptimo funcionamiento. Revisamos y optimizamos las conexiones de red, actualizamos el software y garantizamos la seguridad de tus dispositivos. También mantenemos tus cámaras de seguridad, limpiando lentes, verificando grabaciones y actualizando el sistema. Nos encargamos de que tus sistemas de control de acceso y alarmas estén operativos y realizamos reemplazos o ajustes cuando es necesario. Con nuestro servicio, puedes confiar en que tus sistemas están siempre protegidos y funcionando perfectamente.</p>
+							<p>En CicloIT, ofrecemos mantenimiento integral de redes y sistemas de seguridad, asegurando
+								su óptimo funcionamiento. Revisamos y optimizamos las conexiones de red, actualizamos el
+								software y garantizamos la seguridad de tus dispositivos. También mantenemos tus cámaras
+								de seguridad, limpiando lentes, verificando grabaciones y actualizando el sistema. Nos
+								encargamos de que tus sistemas de control de acceso y alarmas estén operativos y
+								realizamos reemplazos o ajustes cuando es necesario. Con nuestro servicio, puedes
+								confiar en que tus sistemas están siempre protegidos y funcionando perfectamente.</p>
 						</div>
 					</div>
 				</section>
-				<section>
-					<a href="generic.html" class="image">
+				<section id="two2">
+					<a href="#" class="image">
 						<img src="images/ftp.webp" alt="" data-position="top center" />
 					</a>
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Desarrollo de software</h3>
+								<h3>Desarrollo de software y Ciberseguridad</h3>
 							</header>
-							<p>Creamos software personalizado para web y escritorio, utilizando React y Electron en el
-								frontend y Node.js o Java con Spring Boot en el backend. Diseñamos sistemas escalables y
-								eficientes, integrando bases de datos SQL (MySQL) y NoSQL (MongoDB, Firebase).
-								Nuestros desarrollos garantizan rendimiento, seguridad y flexibilidad, adaptándose a las
-								necesidades de cada negocio. Además, ofrecemos despliegue en la nube para asegurar alta
-								disponibilidad.
-								Si buscas una solución tecnológica moderna y a medida, contáctanos para llevar tu
+							<p>Desarrollamos software a medida para web y escritorio, utilizando React y Electron en el
+								frontend, y Node.js o Spring Boot en el backend. Creamos sistemas escalables, eficientes
+								y seguros, integrando bases de datos SQL y NoSQL (MySQL, MongoDB, Firebase), con
+								despliegue en la nube para garantizar alta disponibilidad.
+
+								Además, realizamos pruebas de ciberseguridad (pentesting y hardening) para asegurar la
+								protección de tus datos y la integridad del sistema frente a amenazas.
+
+								¿Buscás una solución moderna, robusta y adaptada a tu negocio? Contactanos y llevá tu
 								proyecto al siguiente nivel.</p>
 						</div>
 					</div>
 				</section>
-				<section>
-					<a href="generic.html" class="image">
+				<section id="two2">
+					<a href="#" class="image">
 						<img src="images/background.webp" alt="" data-position="25% 25%" />
 					</a>
 					<div class="content">
@@ -131,9 +141,10 @@
 						Contáctanos y transforma tu negocio.
 					</p>
 					<ul class="actions">
-						<li><a target="_blank" href="https://wa.me/" class="button next">Contáctanos</a></li>
+						<li><a target="_blank" href="https://wa.me/+5493584314857" class="button next">Contáctanos</a>
+						</li>
 					</ul>
-					
+
 				</div>
 			</section>
 
@@ -142,7 +153,7 @@
 		<footer id="footer">
 			<div class="inner">
 				<ul class="icons">
-					<li>
+					<li id="twitter">
 						<a href="#" class="icon brands alt custom-twitter">
 							<div class="icon-container">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 1200 1227"
@@ -153,8 +164,24 @@
 							</div>
 						</a>
 					</li>
-					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li id="facebook">
+						<a href="#" class="icon brands alt custom-twitter">
+							<div class="icon-container">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+									<path fill="#000" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+								</svg>
+							</div>
+						</a>
+					</li>
+					<li id="instagram">
+						<a href="#" class="icon brands alt custom-twitter">
+							<div class="icon-container">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+									<path fill="#000" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+								</svg>
+							</div>
+						</a>
+					</li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy;Copyright CicloIT. All Rights Reserved
