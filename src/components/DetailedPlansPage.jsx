@@ -88,7 +88,7 @@ function DetailedPlansPage() {
       icon: <Star className="w-6 h-6" />,
       popular: false,
       features: [
-        "Todo lo de CICLO Pro",        
+        "Todo lo de CICLO Pro",
         "Respuesta inmediata (1-2 horas)",
         "Múltiples Backups",
         "Mantenimiento predictivo",
@@ -139,9 +139,8 @@ function DetailedPlansPage() {
               {plans.map((plan, index) => (
                 <div
                   key={index}
-                  className={`${plan.bgColor} ${plan.borderColor} border-2 relative overflow-hidden hover:scale-105 transition-all duration-300 shadow-xl rounded-lg ${
-                    plan.popular ? "ring-2 ring-purple-500/50" : ""
-                  }`}
+                  className={`${plan.bgColor} ${plan.borderColor} border-2 relative overflow-hidden hover:scale-105 transition-all duration-300 shadow-xl rounded-lg ${plan.popular ? "ring-2 ring-purple-500/50" : ""
+                    }`}
                 >
                   {plan.popular && (
                     <div className="absolute top-0 left-0 bg-purple-500 text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
@@ -160,12 +159,12 @@ function DetailedPlansPage() {
                     <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
                     <p className="text-slate-300 text-sm leading-relaxed mb-4">{plan.description}</p>
                     <div className="flex items-baseline gap-1">
-                     {
-                      /* 
-                        <span className="text-3xl font-bold text-white">{plan.price}</span> 
-                        <span className="text-slate-400 text-sm">{plan.period}</span>
-                      */                       
-                     }                                           
+                      {
+                        /* 
+                          <span className="text-3xl font-bold text-white">{plan.price}</span> 
+                          <span className="text-slate-400 text-sm">{plan.period}</span>
+                        */
+                      }
                     </div>
                   </div>
                   {/* Content */}
@@ -285,16 +284,26 @@ function DetailedPlansPage() {
                 Contáctanos para diseñar una solución específica para tu empresa. Ofrecemos planes enterprise y
                 soluciones a medida.
               </p>
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+                <a
+                  href="https://wa.me/5493584314857?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20los%20planes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                >
                   <Phone className="w-4 h-4 mr-2" />
-                  Llamar ahora
-                </button>
-                <button className="inline-flex items-center justify-center border border-slate-600 text-slate-300 hover:bg-slate-700 bg-transparent font-medium py-3 px-6 rounded-lg transition-colors duration-200">
+                  Contactanos ahora
+                </a>
+                <a
+                  href="mailto:contacto@tucorreo.com"
+                  className="inline-flex items-center justify-center border border-slate-600 text-slate-300 hover:bg-slate-700 bg-transparent font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                >
                   <Mail className="w-4 h-4 mr-2" />
                   Enviar email
-                </button>
+                </a>
               </div>
+
             </div>
           </div>
         </section>

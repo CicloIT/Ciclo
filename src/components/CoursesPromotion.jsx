@@ -33,7 +33,7 @@ const CoursesPromotion = () => {
       investment: "$45,000 ARS",
       discount: "15% OFF hasta el 31/07",
       certification: "Certificado Oficial",
-     // rating: 4.8,
+      // rating: 4.8,
       //reviews: 89,
       color: "from-blue-600 to-blue-800",
       prerequisites: "Conocimientos básicos de electricidad y herramientas",
@@ -311,7 +311,7 @@ const CoursesPromotion = () => {
                     <div className="md:col-span-2">
                       <div className="flex items-start space-x-4 mb-4">
                         <div className="p-3 bg-white bg-opacity-20 rounded-lg">
-                        <Icon className="w-8 h-8 text-blue-600" />
+                          <Icon className="w-8 h-8 text-blue-600" />
                         </div>
                         <div>
                           <h2 className="text-2xl font-bold mb-2">
@@ -325,9 +325,9 @@ const CoursesPromotion = () => {
                       <p className="text-white text-opacity-90 leading-relaxed">
                         {course.description}
                       </p>
-                          {
-                            /*
-                              <div className="flex items-center mt-4 space-x-4">
+                      {
+                        /*
+                             <div className="flex items-center mt-4 space-x-4">
                         <div className="flex items-center">
                           <Star className="w-4 h-4 fill-current mr-1" />
                           <span className="font-semibold">{course.rating}</span>
@@ -336,12 +336,14 @@ const CoursesPromotion = () => {
                           </span>
                         </div>
                       </div>
-                            */
-                          }
-                      
-                    </div>
+                        */
+                      }
+                   
 
-                    <div className="space-y-3 text-sm">
+                    </div>
+                      {
+                        /*
+                            <div className="space-y-3 text-sm">
                       <div className="flex items-center">
                         <Clock className="w-4 h-4 mr-2" />
                         <span>{course.duration}</span>
@@ -360,7 +362,8 @@ const CoursesPromotion = () => {
                       </div>
                     </div>
 
-                    <div className="text-center">
+
+                     <div className="text-center">
                       <div className="text-3xl font-bold mb-1">
                         {course.investment}
                       </div>
@@ -371,13 +374,21 @@ const CoursesPromotion = () => {
                         {course.certification}
                       </div>
                     </div>
+                        */
+                      }
+                  
+
+                   
                   </div>
                 </div>
-
+              
                 {/* Course Content */}
                 <div className="p-8">
                   {/* Prerequisites and Objectives */}
-                  <div className="grid md:grid-cols-2 gap-8 mb-6">
+
+                  {
+                    /*
+                      <div className="grid md:grid-cols-2 gap-8 mb-6">
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                         <BookOpen className="w-4 h-4 mr-2" />
@@ -406,7 +417,7 @@ const CoursesPromotion = () => {
                     </div>
                   </div>
 
-                  {/* Syllabus Toggle */}
+
                   <button
                     onClick={() => toggleExpanded(course.id)}
                     className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200 mb-4"
@@ -420,12 +431,10 @@ const CoursesPromotion = () => {
                       <ChevronDown className="w-5 h-5 text-gray-500" />
                     )}
                   </button>
-
-                  {/* Detailed Syllabus */}
                   {expandedCourse === course.id && (
                     <div className="mb-6 bg-gray-50 p-6 rounded-lg">
                       <div className="space-y-6">
-                        {course.syllabus.map((module, index) => (
+                        {course.syllabus.mapF((module, index) => (
                           <div key={index}>
                             <h5 className="font-semibold text-gray-800 mb-3">
                               {module.module}
@@ -446,17 +455,30 @@ const CoursesPromotion = () => {
                       </div>
                     </div>
                   )}
+                    */
+                  }
+                  
+
+                  
 
                   {/* Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <button
-                      className={`flex-1 bg-gradient-to-r ${course.color} text-white py-4 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200 shadow-lg`}
+                    <a
+                      href="https://docs.google.com/forms/d/1cTq350mUpLVx07V10Jes9JdbDSRHLtS0jiLU0out0Q4/edit?hl=es-419"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex-1 bg-gradient-to-r ${course.color} text-white py-4 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200 shadow-lg text-center`}
                     >
                       Inscribirse al Curso
-                    </button>
-                    <button className="flex-1 border-2 border-gray-300 text-gray-700 py-4 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200">
+                    </a>
+                    {
+                      /**
+                        <button className="flex-1 border-2 border-gray-300 text-gray-700 py-4 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200">
                       Solicitar Información
-                    </button>
+                    </button>                       
+                       */
+                    }
+                   
                   </div>
                 </div>
               </div>
@@ -474,19 +496,13 @@ const CoursesPromotion = () => {
             nuestros programas de formación
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center">
-              <Calendar className="w-4 h-4 mr-2" />
-              Agendar Entrevista
-            </button>
-            <button className="border border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors">
-              Descargar Programa
-            </button>
+              Para más información sobre el curso o asistencia con la inscripción, podés llamarnos al 358 485 3816 o enviarnos un correo electrónico a cursos@cicloit.com. Estaremos encantados de ayudarte.
           </div>
 
           <div className="mt-8 pt-6 border-t border-gray-700">
             <div className="flex items-center justify-center space-x-8 text-sm text-gray-400">
               <span>📍 CicloIT - Río Cuarto</span>
-              <span>📞 (0358) 4111128</span>
+              <span>📞 (0358) 4853816</span>
               <span>✉️ cursos@cicloit.com</span>
             </div>
           </div>
