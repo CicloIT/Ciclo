@@ -296,7 +296,7 @@ function DetailedPlansPage() {
                   Contactanos ahora
                 </a>
                 <a
-                  href="mailto:contacto@tucorreo.com"
+                  href="mailto:info@cicloit.com"
                   className="inline-flex items-center justify-center border border-slate-600 text-slate-300 hover:bg-slate-700 bg-transparent font-medium py-3 px-6 rounded-lg transition-colors duration-200"
                 >
                   <Mail className="w-4 h-4 mr-2" />

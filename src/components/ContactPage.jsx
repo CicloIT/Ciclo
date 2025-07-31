@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactPage() {
-  const [state, handleSubmit] = useForm("mdkzwllo");  
-  
+  const [state, handleSubmit] = useForm("mdkzwllo");
+  const [showSuccess, setShowSuccess] = useState(false);
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowSuccess(true);
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+      const timeout = setTimeout(() => {
+        setShowSuccess(false);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [state.succeeded]);
+
   return (
     <div className="pt-5">
       <section id="contact" className="py-5 bg-slate-800/50">
@@ -13,10 +28,10 @@ function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Formulario de contacto */}
             <div className="bg-slate-800 rounded-lg p-8 border border-slate-700">
-              {state.succeeded ? (
+              {showSuccess ? (
                 <p className="text-green-400 text-lg">¡Gracias por tu mensaje! Te responderemos pronto.</p>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <InputField label="Nombre" id="name" type="text" required />
                     <div>
