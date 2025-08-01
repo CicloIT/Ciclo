@@ -242,7 +242,7 @@
           "label": "Configuración de Sensores Milesight"
         },
         {
-          "href": "https://www.youtube.com/results?search_query=rak7289+gateway+configuration",
+          "href": "https://docs.rakwireless.com/product-categories/wisgate/rak7289/quickstart/",
           "label": "Manual del Gateway RAK7289"
         }
       ],
@@ -253,21 +253,20 @@
           "label": "Documentales sobre Especies Invasivas"
         },
         {
-          "href": "https://www.youtube.com/results?search_query=wild+boar+monitoring+technology",
+          "href": "https://www.milesight.com/resources/support/online-demo#iot-cloud",
           "label": "Tecnologías de Monitoreo de Fauna"
         },
         {
-          "href": "https://www.youtube.com/results?search_query=conservation+technology+iot",
-          "label": "IoT en Conservación Ambiental"
+          "href": "https://www.milesight.com/",
+          "label": "IoT Sensores"
         }
       ]
     },
     "contacto": {
       "titulo": "¿Interesado en el Proyecto?",
       "descripcion": "Si deseas conocer más sobre la implementación de este sistema de monitoreo o colaborar en futuras investigaciones, no dudes en contactarnos.",
-      "telefono": "3584853816",
-      "email_label": "email:",
-      "email": "tuemail@ejemplo.com"
+      "telefono": "3584853816",      
+      "email": "info@cicloit.com"
     }
   },
 

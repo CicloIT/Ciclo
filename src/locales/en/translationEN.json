@@ -255,16 +255,15 @@
         },
         {
           "href": "https://www.youtube.com/results?search_query=conservation+technology+iot",
-          "label": "IoT in Environmental Conservation"
+          "label": "IoT Sensors"
         }
       ]
     },
     "contacto": {
       "titulo": "Interested in the Project?",
       "descripcion": "If you’d like to learn more about implementing this monitoring system or collaborate on future research, don’t hesitate to contact us.",
-      "telefono": "3584853816",
-      "email_label": "Email:",
-      "email": "youremail@example.com"
+      "telefono": "3584853816",      
+      "email": "info@cicloit.com"
     }
   },
   "footer": {

@@ -100,10 +100,7 @@ export function ResourcesSection() {
           <div className="flex justify-center space-x-4">
             <div className="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
               <span className="text-sm text-black">{t('recursos.contacto.telefono')}</span>
-            </div>
-            <div className="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
-              <span className="text-sm text-black">{t('recursos.contacto.email_label')}</span>
-            </div>
+            </div>          
             <div className="bg-white bg-opacity-20 px-4 py-2 rounded-lg">
               <span className="text-sm text-black">{t('recursos.contacto.email')}</span>
             </div>
